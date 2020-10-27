@@ -1,0 +1,23 @@
+
+# cosas que va a haber que cambiar al final
+# agregar el DOI al README
+
+
+
+# install.packages("devtools")
+#devtools::install_github("benmarwick/rrtools")
+library(rrtools)
+
+
+# como yo ya genere el proyecto esta funcion genera
+# la estructura de paquete
+# IMPORTANTE! si ya cree el proyecto incluir el path
+rrtools::use_compendium("C:/Users/FLORENCIA/Dropbox/paper_escenarios/EscenariosCompendio")
+
+#modificar el description file
+
+#licencia
+usethis::use_mit_license(name = "Florencia D'Andrea")
+
+# README 
+rrtools::use_readme_rmd()
